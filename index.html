@@ -13,37 +13,47 @@
       color: #003366;
       text-align: center;
     }
+
     header {
       background-color: white;
-      padding: 20px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 20px;
+      position: relative;
     }
+
     .logos {
-      display: flex;
-      gap: 20px;
-      width: 100%;
-      justify-content: space-between;
-    }
-    .logos img {
+      position: relative;
       height: 70px;
-      background: none;
     }
+
+    .logos img:first-child {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      height: 70px;
+    }
+
+    .logos img:last-child {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      height: 70px;
+    }
+
     .title-text {
-      margin-top: 10px;
+      margin-top: 90px;
       font-size: 18px;
       font-weight: bold;
       color: #003366;
     }
+
     .buttons {
       margin-top: 40px;
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
+
     .buttons a {
       background-color: #3399ff;
       color: white;
@@ -54,64 +64,65 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
+
     .buttons a:hover {
       background-color: #007acc;
     }
+
     .instruction {
       margin-top: 20px;
       font-size: 16px;
       font-weight: 500;
     }
+
     .images {
       margin-top: 10px;
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: nowrap;
     }
+
     .images img {
       width: 230px;
       height: auto;
       border-radius: 10px;
       transition: transform 0.3s;
     }
+
     .images img:hover {
       transform: scale(1.05);
     }
-    /* Adjusting the left image's position */
+
+    /* Adjust left image position slightly */
     .images a:first-child img {
-      margin-top: 15px; /* Lowering it slightly */
+      margin-top: 15px;
     }
 
-    /* Mobile-specific styles */
+    /* Keep layout same on mobile */
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 10px 0;
+      .images {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 10px;
       }
-      .logos {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-      }
+
       .logos img {
         height: 60px;
       }
+
       .title-text {
         font-size: 16px;
       }
+
       .buttons {
         flex-direction: column;
         gap: 10px;
       }
+
       .instruction {
         font-size: 14px;
-      }
-      .images {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .images a img {
-        width: 80%;
       }
     }
   </style>
