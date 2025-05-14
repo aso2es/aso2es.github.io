@@ -171,6 +171,20 @@
  }
  
  @media (max-width: 480px) {
+     .responsive-iframe-container iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         border: none;
+     }
+     .Header ul li img {
+         height: 55px;
+         margin: 0 150px 0 0;
+         border: 2px solid white;
+         border-radius: 50%;
+     }
      .tSection {
          font-size: 16px;
          padding: 5px;
