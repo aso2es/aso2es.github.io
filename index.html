@@ -48,17 +48,11 @@
       background-color: #0077cc;
     }
     .images {
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
       margin-top: 30px;
-      position: relative;
-    }
-    .image-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+      justify-items: center;
     }
     .images a img {
       width: 220px;
@@ -69,7 +63,8 @@
       transition: transform 0.3s;
     }
     .images a.right img {
-      margin-top: 30px; /* Adjusts the right image to be lower */
+      position: relative;
+      top: 25%; /* Adjusts the right image vertically */
     }
     .images a img:hover {
       transform: scale(1.05);
@@ -92,16 +87,12 @@
     </div>
 
     <div class="images">
-      <div class="image-wrapper">
-        <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
-          <img src="https://assets.pharma24.pt/images/originals/Vitis.webp" alt="Vitis Product" />
-        </a>
-      </div>
-      <div class="image-wrapper">
-        <a href="https://www.dentaid.com/en" target="_blank">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tZNe-pxY0eHfFYrqXZU2N7zNu5mjjACeHA&s" alt="Dental Image" />
-        </a>
-      </div>
+      <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
+        <img src="https://assets.pharma24.pt/images/originals/Vitis.webp" alt="Vitis Product" />
+      </a>
+      <a href="https://www.dentaid.com/en" target="_blank" class="right">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tZNe-pxY0eHfFYrqXZU2N7zNu5mjjACeHA&s" alt="Dental Image" />
+      </a>
     </div>
   </div>
 
