@@ -64,7 +64,7 @@
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5px; /* Reduced gap to make the images closer */
+      gap: 0px; /* Removed all gap to make the images touch */
       margin-top: 20px;
       justify-items: center;
     }
@@ -78,7 +78,7 @@
     }
     .images a.right img {
       position: relative;
-      top: 12%; /* Adjusts the right image vertically */
+      top: 5%; /* Adjusts the right image vertically to be closer */
     }
     .images a img:hover {
       transform: scale(1.05);
