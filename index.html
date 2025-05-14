@@ -15,11 +15,18 @@
             background-color: #ffffff;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
-        .logo {
+        .logo-university {
             position: absolute;
             top: 10px;
             right: 20px;
+            width: 120px;
+        }
+        .logo-dentistry {
+            position: absolute;
+            top: 10px;
+            left: 20px;
             width: 120px;
         }
         .content {
@@ -45,7 +52,12 @@
 <body>
 
     <div class="header">
-        <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo">
+        <!-- University Logo -->
+        <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo-university">
+
+        <!-- Dentistry Logo -->
+        <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU" class="logo-dentistry">
+
         <h1>For Further Information in English or Arabic</h1>
         <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
     </div>
@@ -53,10 +65,4 @@
     <div class="content">
         <p>Welcome to our dental education page!</p>
         <div class="buttons">
-            <button class="button" onclick="window.location.href='path_to_english_pdf.pdf'">English</button>
-            <button class="button" onclick="window.location.href='path_to_arabic_pdf.pdf'">Arabic</button>
-        </div>
-    </div>
-
-</body>
-</html>
+            <button class="button" onclick="window.location.href='path_to_english_pdf.pdf'">_
