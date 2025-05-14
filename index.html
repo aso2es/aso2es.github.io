@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teeth Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f7ff;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-        .logo-university {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            width: 120px;
-        }
-        .logo-dentistry {
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            width: 120px;
-        }
-        .content {
-            padding: 50px;
-            text-align: center;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        .button {
-            background-color: #3399ff;
-            color: white;
-            padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #0077cc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teeth Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo-university {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 120px;
+    }
+    .logo-dentistry {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 120px;
+    }
+    .content {
+      padding: 50px;
+      text-align: center;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .button {
+      background-color: #3399ff;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0077cc;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .images a img {
+      width: 220px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+    .images a img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-    <div class="header">
-        <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo-university">
-        <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU" class="logo-dentistry">
-        <h1>For Further Information in English or Arabic</h1>
-        <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
+  <div class="header">
+    <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo-university" />
+    <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU" class="logo-dentistry" />
+    <h1>For Further Information in English or Arabic</h1>
+    <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
+  </div>
+
+  <div class="content">
+    <div class="buttons">
+      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1NlJmm1NuCzTVZiv6Yv3WJ8xqSm55Nkii/view?usp=drive_link'">English</button>
+      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1O0ukppcKSjm39MG390s5D7rj9dpZzGCI/view?usp=drive_link'">عربي</button>
     </div>
 
-    <div class="content">
-        <div class="buttons">
-            <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1NlJmm1NuCzTVZiv6Yv3WJ8xqSm55Nkii/view?usp=drive_link'">English</button>
-            <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1O0ukppcKSjm39MG390s5D7rj9dpZzGCI/view?usp=drive_link'">عربي</button>
-        </div>
+    <div class="images">
+      <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
+        <img src="https://assets.pharma24.pt/images/originals/Vitis.webp" alt="Vitis Product" />
+      </a>
+      <a href="https://www.dentaid.com/en" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tZNe-pxY0eHfFYrqXZU2N7zNu5mjjACeHA&s" alt="Dental Image" />
+      </a>
     </div>
+  </div>
 
 </body>
 </html>
