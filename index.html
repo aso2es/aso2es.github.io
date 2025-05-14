@@ -30,12 +30,17 @@
       left: 20px;
       width: 120px;
     }
-    .content {
-      padding: 30px;
-      text-align: center;
+    .header-text {
+      margin-top: 150px; /* Push the text below the logos */
     }
     h1 {
       color: #3399ff;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
     }
     .buttons {
       margin-top: 20px;
@@ -64,7 +69,7 @@
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5px; /* Reduced gap to make the images closer */
+      gap: 0px;
       margin-top: 20px;
       justify-items: center;
     }
@@ -78,7 +83,7 @@
     }
     .images a.right img {
       position: relative;
-      top: 12%; /* Adjusts the right image vertically */
+      top: 5%;
     }
     .images a img:hover {
       transform: scale(1.05);
@@ -90,14 +95,17 @@
   <div class="header">
     <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo-university" />
     <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU" class="logo-dentistry" />
+  </div>
+
+  <div class="header-text">
     <h1>For Further Information in English or Arabic</h1>
     <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
   </div>
 
   <div class="content">
     <div class="buttons">
-      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1NlJmm1NuCzTVZiv6Yv3WJ8xqSm55Nkii/view?usp=drive_link'">English</button>
-      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1O0ukppcKSjm39MG390s5D7rj9dpZzGCI/view?usp=drive_link'">عربي</button>
+      <button class="button" onclick="window.location.href='english.pdf'">English</button>
+      <button class="button" onclick="window.location.href='arabic.pdf'">عربي</button>
     </div>
 
     <div class="message">
