@@ -49,7 +49,7 @@
     }
     .images {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* Align left */
       gap: 40px;
       margin-top: 30px;
       flex-wrap: wrap;
@@ -66,7 +66,7 @@
     /* Positioning the right image with more control */
     .images a.right img {
       position: absolute;
-      top: 250px;  /* Adjust this value for precise positioning */
+      top: 150px;  /* Moved it higher */
     }
     .images a img:hover {
       transform: scale(1.05);
@@ -84,8 +84,8 @@
 
   <div class="content">
     <div class="buttons">
-      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1NlJmm1NuCzTVZiv6Yv3WJ8xqSm55Nkii/view?usp=drive_link'">English</button>
-      <button class="button" onclick="window.location.href='https://drive.google.com/file/d/1O0ukppcKSjm39MG390s5D7rj9dpZzGCI/view?usp=drive_link'">عربي</button>
+      <button class="button" onclick="window.location.href='english.pdf'">English</button>
+      <button class="button" onclick="window.location.href='arabic.pdf'">عربي</button>
     </div>
 
     <div class="images">
