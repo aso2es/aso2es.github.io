@@ -1,0 +1,237 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     background-color: #F0ECEC;
+     color: #333;
+ }
+ 
+ .Header {
+     background-color: #578BA3;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 80px;
+     border-bottom: 5px solid white;
+ }
+ 
+ .Header ul {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0;
+     padding: 0 0px;
+     width: 100%;
+     height: 100%;
+     list-style: none;
+ }
+ 
+ .Header ul li {
+     list-style: none;
+ }
+ 
+ .Header ul li img {
+     height: 55px;
+     margin: 0 15px;
+     border: 2px solid white;
+     border-radius: 50%;
+ }
+ 
+ #iFrameViewer {
+     margin-left: 20%;
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .tSection {
+     text-align: center;
+     padding: 10px 20px 5px;
+     font-size: 18px;
+ }
+ 
+ .langToggler {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     margin: 10px 0 30px;
+     flex-wrap: wrap;
+     align-content: center;
+ }
+ 
+ .langToggler button {
+     background-color: #578BA3;
+     color: white;
+     padding: 12px 20px;
+     border-radius: 8px;
+     border: none;
+     text-decoration: none;
+     font-weight: bold;
+     transition: background-color 0.3s;
+     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+ }
+ 
+ .langToggler button:hover {
+     background-color: #4aa7ca;
+ }
+ 
+ .bSection {
+     text-align: center;
+     margin-top: 60px;
+     padding: 20px;
+ }
+ 
+ .bSection p {
+     font-size: 16px;
+     margin-bottom: 20px;
+ }
+ 
+ .imageSection {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+ 
+ .imageSection a img {
+     max-width: 250px;
+     width: 100%;
+     height: 90%;
+     border-radius: 15px;
+     transition: transform 0.3s;
+     margin-right: 50px;
+     margin-left: 50px;
+ }
+ 
+ .imageSectiona a img:hover {
+     transform: scale(1.05);
+ }
+ 
+ #arrowLeft {
+     width: 90px;
+     height: auto;
+     margin-left: 55%;
+     margin-bottom: -50px;
+ }
+ 
+ @media (max-width: 600px) {
+     .imageSection {
+         flex-direction: row;
+         gap: 10px;
+     }
+     .imageSection {
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+     .imageSection a {
+         flex: 1 1 40%;
+     }
+     header {
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     header img {
+         height: 50px;
+     }
+     #arrowLeft {
+         margin-left: 0;
+         display: block;
+         margin: 0 auto;
+         margin-bottom: 10px;
+         width: 50px;
+     }
+ }
+ 
+ .boP {
+     background-color: #578BA3;
+     border-top: 5px solid white;
+ }
+ /* Responsive */
+ 
+ @media (max-width: 768px) {
+     .Header ul {
+         justify-content: center;
+     }
+     .Header ul li img {
+         margin: 10px;
+     }
+     .langToggler {
+         flex-direction: column;
+         gap: 10px;
+     }
+     .bSection {
+         margin-top: 30px;
+         padding: 10px;
+     }
+     .bSection p {
+         font-size: 14px;
+     }
+     #arrowLeft {
+         width: 60px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .responsive-iframe-container iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         border: none;
+     }
+     .Header ul li img {
+         height: 55px;
+         margin: 0 150px 0 0;
+         border: 2px solid white;
+         border-radius: 50%;
+         align-content: space-evenly;
+     }
+     .Header ul li {
+         list-style: none;
+     }
+     .tSection {
+         font-size: 16px;
+         padding: 5px;
+     }
+     .langToggler button {
+         width: 90%;
+         max-width: 300px;
+         margin: 0 auto;
+     }
+     #label1 {
+         text-align: center;
+     }
+     .imageSection a {
+         flex: 1 1 100%;
+         max-width: 100%;
+     }
+ }
+ 
+ .responsive-iframe-container {
+     position: relative;
+     width: 70%;
+     padding-bottom: 56.25%;
+     height: 0;
+     overflow: hidden;
+     max-width: 100%;
+     background: #f0f0f0;
+     margin: auto;
+ }
+ 
+ .responsive-iframe-container iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: none;
+ }
+ 
+ img,
+ iframe {
+     max-width: 100%;
+     height: auto;
+ }
