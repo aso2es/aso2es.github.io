@@ -10,6 +10,7 @@
       background-color: #e6f7ff;
       margin: 0;
       padding: 0;
+      color: #333;
     }
     .header {
       background-color: #ffffff;
@@ -30,8 +31,16 @@
       width: 120px;
     }
     .content {
-      padding: 50px;
+      padding: 30px;
       text-align: center;
+    }
+    h1 {
+      color: #3399ff;
+    }
+    .message {
+      font-size: 16px;
+      color: #555;
+      margin-top: 20px;
     }
     .buttons {
       margin-top: 20px;
@@ -39,32 +48,37 @@
     .button {
       background-color: #3399ff;
       color: white;
-      padding: 10px 20px;
-      margin: 5px;
+      padding: 12px 25px;
+      margin: 10px;
       border: none;
       cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
     }
     .button:hover {
       background-color: #0077cc;
+      transform: scale(1.05);
     }
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px; /* Reduced gap to make images closer */
-      margin-top: 30px;
+      gap: 10px; /* Reduced gap to make the images even closer */
+      margin-top: 20px;
       justify-items: center;
     }
     .images a img {
-      width: 220px;
+      width: 200px;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       object-fit: contain;
       transition: transform 0.3s;
     }
     .images a.right img {
       position: relative;
-      top: 25%; /* Adjusts the right image vertically */
+      top: 18%; /* Adjusts the right image vertically */
     }
     .images a img:hover {
       transform: scale(1.05);
@@ -81,6 +95,9 @@
   </div>
 
   <div class="content">
+    <div class="message">
+      <p>Click on the icon to redirect you to the main page</p>
+    </div>
     <div class="buttons">
       <button class="button" onclick="window.location.href='english.pdf'">English</button>
       <button class="button" onclick="window.location.href='arabic.pdf'">عربي</button>
