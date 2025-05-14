@@ -2,135 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teeth Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational QR Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #e6f7ff;
       margin: 0;
       padding: 0;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .header {
-      background-color: #ffffff;
-      padding: 40px 0;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-    }
-    .logo-university {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      width: 120px;
-    }
-    .logo-dentistry {
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 120px;
-    }
-    .header-text {
+      background-color: #e6f2ff;
+      color: #003366;
       text-align: center;
-      margin-top: 80px; /* Adjust the margin to ensure the text is positioned correctly */
     }
-    h1 {
-      color: #3399ff;
-      font-size: 28px;
-      margin-bottom: 10px;
+    header {
+      background-color: white;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
     }
-    p {
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logos img {
+      height: 70px;
+      background: none;
+    }
+    .title-text {
+      margin-top: 10px;
       font-size: 18px;
-      color: #555;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+      font-weight: bold;
+      color: #003366;
     }
     .buttons {
-      margin-top: 20px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
-    .button {
+    .buttons a {
       background-color: #3399ff;
       color: white;
-      padding: 12px 25px;
-      margin: 10px;
-      border: none;
-      cursor: pointer;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
       font-size: 16px;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .button:hover {
-      background-color: #0077cc;
-      transform: scale(1.05);
+    .buttons a:hover {
+      background-color: #007acc;
     }
-    .message {
-      font-size: 16px;
-      color: #555;
+    .instruction {
       margin-top: 20px;
+      font-size: 16px;
+      font-weight: 500;
     }
     .images {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
       margin-top: 20px;
-      justify-items: center;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
     }
-    .images a img {
+    .images img {
       width: 200px;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      object-fit: contain;
       transition: transform 0.3s;
     }
-    .images a img:hover {
+    .images img:hover {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-
-  <div class="header">
-    <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo-university" />
-    <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU" class="logo-dentistry" />
-    <div class="header-text">
-      <h1>For Further Information in English or Arabic</h1>
-      <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
+  <header>
+    <div class="logos">
+      <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="LIMU Logo" />
+      <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU Logo" />
     </div>
+  </header>
+  <div class="title-text">
+    For Further Information in English or Arabic<br />
+    لمعلومات اكثر تفصيلا بالعربي او الانجليزي
   </div>
-
-  <div class="content">
-    <div class="buttons">
-      <button class="button" onclick="window.location.href='english.pdf'">English</button>
-      <button class="button" onclick="window.location.href='arabic.pdf'">عربي</button>
-    </div>
-
-    <div class="message">
-      <p>Click on the icon to redirect you to the main page</p>
-    </div>
-
-    <div class="images">
-      <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
-        <img src="https://assets.pharma24.pt/images/originals/Vitis.webp" alt="Vitis Product" />
-      </a>
-      <a href="https://www.dentaid.com/en" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tZNe-pxY0eHfFYrqXZU2N7zNu5mjjACeHA&s" alt="Dental Image" />
-      </a>
-    </div>
+  <div class="buttons">
+    <a href="pdfs/english.pdf" target="_blank">English</a>
+    <a href="pdfs/arabic.pdf" target="_blank">عربي</a>
   </div>
-
+  <div class="instruction">
+    Click on the icon to redirect you to the main page
+  </div>
+  <div class="images">
+    <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
+      <img src="https://drive.google.com/uc?export=view&id=16RCOLRFv9fPk_TKEIEaG5vVMbiwzhisf" alt="New Left Image" />
+    </a>
+    <a href="https://www.dentaid.com/en" target="_blank">
+      <img src="https://drive.google.com/uc?export=view&id=11SaWV7-O14lEJCKuTmi-ILaDVRHnZSuZ" alt="New Right Image" />
+    </a>
+  </div>
 </body>
 </html>
