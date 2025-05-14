@@ -16,7 +16,7 @@
 
     header {
       background-color: white;
-      padding: 20px;
+      padding: 20px 20px 60px 20px;
       position: relative;
     }
 
@@ -39,15 +39,22 @@
       height: 70px;
     }
 
-    .title-text {
-      margin-top: 90px;
+    .header-info-text {
+      margin-top: 80px;
       font-size: 18px;
       font-weight: bold;
       color: #003366;
     }
 
+    .title-text {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+    }
+
     .buttons {
-      margin-top: 40px;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
       gap: 20px;
@@ -94,12 +101,10 @@
       transform: scale(1.05);
     }
 
-    /* Adjust left image position slightly */
     .images a:first-child img {
       margin-top: 15px;
     }
 
-    /* Keep layout same on mobile */
     @media (max-width: 768px) {
       .images {
         flex-wrap: nowrap;
@@ -110,6 +115,10 @@
 
       .logos img {
         height: 60px;
+      }
+
+      .header-info-text {
+        font-size: 16px;
       }
 
       .title-text {
@@ -133,11 +142,15 @@
       <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="LIMU Logo" />
       <img src="https://research.limu.edu.ly/wp-content/uploads/sites/4/2022/09/dentistry-logo-e1662637471757.png" alt="Dentistry LIMU Logo" />
     </div>
+    <div class="header-info-text">
+      For Further Information in English or Arabic<br />
+      لمعلومات اكثر تفصيلا بالعربي او الانجليزي
+    </div>
   </header>
 
   <div class="title-text">
-    For Further Information in English or Arabic<br />
-    لمعلومات اكثر تفصيلا بالعربي او الانجليزي
+    Bleaching teeth Lec<br />
+    محاضره مفصله لتبييض الاسنان
   </div>
 
   <div class="buttons">
