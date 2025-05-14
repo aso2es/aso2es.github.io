@@ -12,16 +12,17 @@
       padding: 0;
       color: #333;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
-      text-align: center;
     }
     .header {
       background-color: #ffffff;
       padding: 40px 0;
       width: 100%;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
     }
     .logo-university {
       position: absolute;
@@ -36,7 +37,8 @@
       width: 120px;
     }
     .header-text {
-      margin-top: 130px; /* Adjust the margin to ensure the text is positioned correctly */
+      text-align: center;
+      margin-top: 80px; /* Adjust the margin to ensure the text is positioned correctly */
     }
     h1 {
       color: #3399ff;
@@ -46,6 +48,14 @@
     p {
       font-size: 18px;
       color: #555;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
     .buttons {
       margin-top: 20px;
@@ -74,7 +84,7 @@
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0px;
+      gap: 10px;
       margin-top: 20px;
       justify-items: center;
     }
@@ -85,10 +95,6 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       object-fit: contain;
       transition: transform 0.3s;
-    }
-    .images a.right img {
-      position: relative;
-      top: 5%;
     }
     .images a img:hover {
       transform: scale(1.05);
@@ -120,7 +126,7 @@
       <a href="https://www.vitisoralhealth.co.uk/" target="_blank">
         <img src="https://assets.pharma24.pt/images/originals/Vitis.webp" alt="Vitis Product" />
       </a>
-      <a href="https://www.dentaid.com/en" target="_blank" class="right">
+      <a href="https://www.dentaid.com/en" target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tZNe-pxY0eHfFYrqXZU2N7zNu5mjjACeHA&s" alt="Dental Image" />
       </a>
     </div>
