@@ -1,58 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>For Further Information</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: linear-gradient(to bottom, #e0f7ff, #ffffff);
-    }
-    h1 {
-      font-size: 28px;
-      color: #0077b6;
-    }
-    p {
-      font-size: 18px;
-      color: #004e64;
-      margin-bottom: 30px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 14px 28px;
-      margin: 10px;
-      background-color: #00b4d8;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    a.button:hover {
-      background-color: #0077b6;
-      transform: scale(1.05);
-    }
-    .tooth-icon {
-      font-size: 60px;
-      color: #00b4d8;
-      margin-bottom: 20px;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeth Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 120px;
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #3399ff;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0077cc;
+        }
+    </style>
 </head>
 <body>
-  <div class="tooth-icon">
-    <i class="fas fa-tooth"></i>
-  </div>
-  <h1>For further information in Eng or Ar</h1>
-  <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
 
-  <a class="button" href="https://drive.google.com/file/d/1NlJmm1NuCzTVZiv6Yv3WJ8xqSm55Nkii/view?usp=drive_link" target="_blank">English PDF</a>
-  <a class="button" href="https://drive.google.com/file/d/1O0ukppcKSjm39MG390s5D7rj9dpZzGCI/view?usp=drive_link" target="_blank">Arabic PDF</a>
+    <div class="header">
+        <img src="https://pharmacy.limu.edu.ly/wp-content/uploads/sites/11/2020/06/limu-logo.jpg" alt="Libyan International Medical University" class="logo">
+        <h1>For Further Information in English or Arabic</h1>
+        <p>لمعلومات اكثر تفصيلا بالعربي او الانجليزي</p>
+    </div>
+
+    <div class="content">
+        <p>Welcome to our dental education page!</p>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='path_to_english_pdf.pdf'">English</button>
+            <button class="button" onclick="window.location.href='path_to_arabic_pdf.pdf'">Arabic</button>
+        </div>
+    </div>
+
 </body>
 </html>
